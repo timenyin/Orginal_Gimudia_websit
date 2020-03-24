@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400|Nunito:300,300i&display=swap');
+
+:root {
+  --mainyellow: #E3B513;
+  --mainGold: #C39E61;
+  --mainBlack: #151619;
+  --mainBrown: #7D452A;
+  --mainWhite: #ffffff;
+}
+
+/*============GOBAL VARRABLES ============*/
+
+.btn-yellow {
+  background: var(--mainyellow);
+  color: var(--mainWhite);
+  border-radius: 0.1rem !important;
+  font-size: 1.1rem !important;
+}
+.btn-yellow:hover {
+  background: var(--mainBrown);
+  color: var(--mainyellow);
+}
+
+.text-yellow {
+  color: var(--mainyellow);
+}
+
+/*===========MAIN CSS VARRIABLES ============*/
+
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2200;
+  display:none;
+}
+
+
+
+ /*===== sm screen===============*/
+ @media screen and (max-width:425px) {
+/*
+    .navbar-nav {
+     display: none;
+    }
+
+ 
+  .navbar {
+    height: 500px;
+    z-index: 100;
+  }
+    .nav-drop {
+      display: none;
+    }
+
+    .menu-btn  {
+        display: block;
+    }
+ */
+    .small-nav ul.small-menu {
+        display: block !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        background: var(--mainBrown);
+        width: 50%;
+        height: 1383%;
+        border-right: 1px solid var(--mainBlack);
+        opacity:0.9;
+        padding: 20px;
+        transform: translateX(0px);
+       
+    }
+
+    .samll-nav ul.small-menu .nav-item {
+      padding: 10px;
+      border-bottom:1px solid var(--mainGold) !important;
+      font-size:20px !important
+
+    }
+
+    .nav-item{
+      border-bottom: var(--mainWhite) solid 1px;
+      padding: 15px;
+    }
+
+    .nav-item:last-child {
+      border-bottom: 0;
+    }
+
+
+  }
+
+.fa-bars  {
+  color: var(--mainBrown);
+}
+
+.navbar {
+  background:linear-gradient(rgba(50, 16, 16, 0.6),rgba(50, 16, 16, 0.6)),
+  url('../img/optimization/board4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/*====== @MEDIA QUEARY FOR SERVICES SECTION ===============*/
+/*===== ipad screen===============*/
+@media screen and (max-width:768px) {
+  .navbar {
+    background:var(--mainBrown);
+  }
+}
+
+.navbar-brand-text {
+  font-size: 1.2rem;
+  font-weight: bold !important;
+  color: var(--mainWhite) !important;
+  margin-top:-1rem ;
+}
+
+.navbar-brand-text-2 {
+  font-size: 2rem;
+  font-weight: bold !important;
+  color: var(--mainyellow) !important;
+  margin-top:-1rem ;
+  font-style: italic;
+}
+
+.navbar .navbar-item {
+  font-size: 1.4rem;
+  
+}
+
+.navbar ul li a {
+  color: var(--mainyellow) !important;
+  font-size: 18px;
+}
+
+.navbar ul li a:hover {
+  color: var(--mainWhite) !important;
+}
+
+
+.fa-align-center {
+  color: var(--mainyellow) !important;  
+}
+
+
+/*=========== company-brand ============*/
+.company-brand {
+  position: relative;
+  background:linear-gradient(rgba(50, 16, 16, 0.6),rgba(50, 16, 16, 0.6)),
+  url('../img/optimization/board4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+
+.company-brand .secondary-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 0.1rem solid var(--mainBrown);
+}
+
+
+.text-showcase-layer-2 {
+  color: var(--mainyellow);
+  font-weight: 400;
+}
+
+/*====== @MEDIA QUEARY FOR SERVICES SECTION ===============*/
+/*===== sm  screen===============*/
+@media screen and (max-width:756px) {
+  .text-showcase-layer-2 {
+    font-size:2.0rem;
+    margin-top: -4rem;
+  }
+}
+
+@media screen and (max-width:388px) {
+  .text-showcase-layer-2 {
+    font-size:1.6rem;
+    margin-top: -4rem;
+  }
+}
+
+
+
+@media screen and (max-width:399px) {
+  .media-h3  {
+    font-size:1.4rem;
+  }
+}
+
+
+.text-showcase-layer-4 {
+  color: var(--mainWhite);
+}
+
+@media screen and (max-width:425px) {
+  .text-showcase-layer-4 {
+    padding: 1rem !important;
+  }
+
+}
+
+
+@media screen and (max-width:380px) {
+   .text-showcase-layer-4 {
+     padding: 0.5rem !important;
+   }
+
+}
+
+.home-inner {
+  padding-top: 150px;
+}
+
+.fa-check {
+  color: var(--mainWhite);
+  background: var(--mainyellow);
+  padding: 5px;
+  border-radius:5px;
+}
+
+/*====== @MEDIA QUEARY FOR SERVICES SECTION ===============*/
+/*===== sm screen===============*/
+@media screen and (max-width:425px) {
+
+  .text-shocase-layer-2 {
+    color: var(--mainyellow);
+    font-weight:bold;
+    font-size: 2rem;
+  }
+  
+  }
+
+  @media screen and (max-width:320px) {
+  /*=====xs screen===============*/
+    .text-shocase-layer-2 {
+      color: var(--mainyellow);
+      font-weight:bold;
+      font-size: 1.8rem;
+    }
+    
+    }
+
+
+
+
+/*=========== services section  ============*/
+.services-area{  
+  background-color: whitesmoke;
+  
+}
+
+.services-area-text {
+  color: var(--mainyellow);
+}
+
+.services-area{
+  margin-bottom: -5px;    
+  
+}
+
+.services-warp {
+  box-shadow: 0 0 10px rgba(41, 39, 38, 0.137);
+  overflow: hidden;
+  padding: 25px 35px;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  z-index: 9;
+  margin-top: 20px;
+  border-radius: 10%
+  
+}
+
+.services-warp::before, .services-warp::after {
+  content: " ";
+  height: 300%;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 120%;
+  z-index: -9;
+  transition: all 0.8s;
+  opacity: 0;
+  background-color:var(--mainyellow);
+}
+
+.services-warp::before{
+  top: -37px;
+  left: 100%;
+}
+
+.services-warp::after{
+  right: 100%;
+  bottom: -37px;
+}
+
+.services-warp:hover:before{
+  left: -27px;
+  opacity: 1;
+}
+
+.services-warp:hover:after{
+ right: -27px;
+  opacity: 1;
+}
+
+.services-warp:hover{
+  color: white;
+}
+
+.services-warp:h4{
+  color: white;
+}
+
+.services-warp:hover h4:after{
+  background-color: white;
+}
+
+.services-warp h4{
+  font-weight: 400;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.service-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+  color:var(--mainBrown)
+}
+
+.services-warp:hover .service-icon{
+  transform: rotate(360deg);
+   color:white;
+}
+.services-warp p {
+   font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+/*=================== @MEDIA QUEARY FOR SERVICES SECTION =======================*/
+/*=====laptop 1024px screen===============*/
+@media screen and (max-width:1024px) {
+
+  .services-warp::before, .services-warp::after{
+      content: " ";
+      height: 300%;
+      position: absolute;
+      transform: rotate(0deg);
+      width: 120%;
+      z-index: -9;
+      transition: all 0.8s;
+      opacity: 0;
+      background-color:var(--mainyellow);
+      
+  }
+  
+  }
+
+  /*===== sm screen===============*/
+@media screen and (max-width:425px) {
+
+  .services-area-text {
+    font-size: 1.4rem;
+  }
+  
+  }
+
+  /*=================== EVENT SECTION =======================*/
+
+  .cursor-change {
+    cursor: grab;
+    color: var(--mainBrown);
+    text-decoration: underline;
+    
+  }
+
+/*=================== TEAM SECTION =======================*/
+#team img {
+  margin-top: -50px;
+  margin-left:70px;
+
+}
+
+
+#team .fab {
+  color: var(--mainBrown) }
+
+ 
+/*=================== @MEDIA QUEARY FOR SERVICES SECTION =======================*/
+
+@media (max-width: 768px) {
+  #showcase {
+    min-height: 500px; }
+    #showcase h1 {
+      font-size: 4rem; }
+
+.mb-resp {
+  margin-bottom: 1rem; } 
+
+}
+
+
+
+/*=====laptop 1024px screen===============*/
+@media screen and (max-width:1024px) {
+  #team .fab {
+    color: var(--mainBrown);
+  }
+
+  #team  .card:hover {
+    background: none;
+  }
+
+
+}
+
+
+@media (max-width: 320px) {
+#team img {
+  margin-left: 47px;
+}
+
+}
+
+@media (max-width: 300px) {
+  #team img {
+    margin-left: 42px;
+  }
+  
+  }
+
+  /*===================Form Group=========================*/
+ #error_message{
+    margin-bottom: 20px;
+    background: var(--mainGold);
+    padding: 0px;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 14px;
+    color: var(--mainWhite);
+    transition: all 0.5s ease;
+  }
+
+
+/*=================== FOOTER SECTION =======================*/
+
+#footer{
+  margin-top: 20px;
+ color: #012f7e;
+ z-index: 2;
+}
+
+.footer-logo {
+   width: 150px;
+   margin-top: 55px;
+   margin-bottom: 15px;
+   
+}
+
+.footer-logo img {
+   align-items: center;
+}
+
+.footer-logo h3{
+   font-size:18px;
+}
+
+.footer-text {
+    margin-top: 35px;
+    
+}
+
+/*=================== @MEDIA QUEARY FOR SERVICES SECTION =======================*/
+
+@media (max-width: 768px) {
+  .ml-4-footer {
+   margin-left: 3rem;
+  }
+
+  .shrink {
+    width:500px;
+    margin-left:60px;
+   }
+  
+}
+
+@media (max-width: 425px) {
+  .shrink {
+   width:300px;
+   margin-left:60px;
+  }
+  
+}
+
+@media (max-width: 360px) {
+  .shrink {
+   width:300px;
+   margin-left:10px;
+  }
+  
+}
+
+@media (max-width: 320px) {
+  .shrink {
+   width:300px;
+   margin-left:10px;
+  }
+  
+}
+
+p{
+   padding: 5px;
+   margin: 5px;
+
+}
+
+#footer h1{
+   font-size: 18px;
+   text-align: left;
+   margin-bottom: 15px;
+   margin-top: 25px; 
+}
+
+
+#footer p{
+   font-size: 12px;
+   text-align: left;
+   color: skyblue;
+}
+
+.fa-envelope {
+  text-decoration: none !important;
+  color: skyblue;
+}
+
+
+#footer .city{
+   margin-left: 37px;
+}
+
+
+#footer .row .fa{
+   padding-right: 7px;
+   font-size: 17px;
+  color: skyblue;
+   
+}
+
+#footer hr{
+   margin-top: 10px;
+}
+
+#footer .fab {
+  color: skyblue;
+  font-size: 17px;
+}
+
+
+#footer .copyright{
+   margin-bottom: -80px;
+   text-align: center;
+   font-size: 15px;
+}
+
+.fab-color {
+  text-decoration: none !important;
+  color: skyblue;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: none;
+}
+
+
+.fab-color:hover {
+  text-decoration: none !important;
+  color: var(--mainWhite);
+  text-underline-position: none;
+}
+
+.footer-links2 {
+  text-decoration: none;
+  color: skyblue;
+}
+
+.footer-links2:hover {
+  text-decoration: none;
+  color: var(--mainWhite);
+}
+
+.cac-link {
+  text-decoration: none;
+  color: var(--mainyellow);
+
+}
+
+.cac-link:hover {
+  text-decoration: none;
+  color: var(--mainWhite);
+}
+
+/*=================== javascript-css SECTION =======================*/
+
+.bg-dark-js.scolled {
+  background:var(--mainBrown);
+  transition: .5s ease-in;
+}
+
+
+/*============ categories section =============*/
+.categories-link {
+  color: var(--mainyellow);
+  text-decoration: none;
+}
+.categories-link:hover {
+  text-decoration:none;
+  color: var(--mainGold);
+
+}
+
+.categories-img {
+  transition: all 1s linear;
+}
+
+.categories-container:hover .categories-img {
+  opacity: 0.5;
+}
+
+.category-link {
+  position: absolute;
+  background: var(--mainWhite);
+  left: 0;
+  bottom: 0;
+  padding: 0.2rem 13rem 0.2rem 0.2rem;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  opacity: 0;
+  transition: all 1s linear;
+  text-decoration: none !important;
+}
+
+
+.category-link:hover {
+  color: var(--mainGrey);
+  }
+  
+  .categories-container:hover .category-link {
+    opacity: 1;
+  }
