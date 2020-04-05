@@ -440,14 +440,14 @@ body {
 
 @media (max-width: 320px) {
 #team img {
-  margin-left: 47px;
+  margin-left: 37px;
 }
 
 }
 
 @media (max-width: 300px) {
   #team img {
-    margin-left: 42px;
+    margin-left: 37px;
   }
   
   }
